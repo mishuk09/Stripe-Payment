@@ -25,7 +25,7 @@ export default function App() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("http:/localhost:3001/create-payment-intent", {
+    fetch("https://stripe-payment-back-4oal.vercel.app/?vercelToolbarCode=NcLdfJ6dnayGY5K/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: [{ id: "xl-tshirt", amount: 1000 }] }),
